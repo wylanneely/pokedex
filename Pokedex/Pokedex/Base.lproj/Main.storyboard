@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2rJ-ye-EtD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="16" width="375" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="oLu-0O-F8i" id="jAb-FD-ieh"/>
@@ -56,11 +56,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="fKL-Zw-B2r" secondAttribute="trailing" constant="8" id="9N9-EJ-KiF"/>
                             <constraint firstItem="fKL-Zw-B2r" firstAttribute="centerY" secondItem="JHk-hb-pG0" secondAttribute="centerY" id="CvF-uY-FLr"/>
+                            <constraint firstItem="2rJ-ye-EtD" firstAttribute="top" secondItem="JHk-hb-pG0" secondAttribute="top" constant="16" id="LyQ-yk-1vj"/>
                             <constraint firstAttribute="trailing" secondItem="2rJ-ye-EtD" secondAttribute="trailing" id="Uqe-5u-hZL"/>
                             <constraint firstItem="fKL-Zw-B2r" firstAttribute="leading" secondItem="JHk-hb-pG0" secondAttribute="leading" constant="8" id="bde-Be-wuw"/>
                             <constraint firstItem="2rJ-ye-EtD" firstAttribute="leading" secondItem="JHk-hb-pG0" secondAttribute="leading" id="nAD-E5-GDB"/>
                             <constraint firstItem="fKL-Zw-B2r" firstAttribute="centerX" secondItem="JHk-hb-pG0" secondAttribute="centerX" id="pX6-fY-haS"/>
-                            <constraint firstItem="2rJ-ye-EtD" firstAttribute="top" secondItem="JHk-hb-pG0" secondAttribute="top" id="qat-PW-6Nz"/>
                         </constraints>
                     </view>
                     <connections>

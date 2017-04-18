@@ -19,7 +19,24 @@ class PokedexViewController: UIViewController, UISearchBarDelegate {
     
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        <#code#>
+        
+        guard let searchTerm = searchBar.text, !searchTerm.isEmpty else {return}
+        
+        PokemonController.fetchPokemon(for: searchTerm.lowercased()) { (pokemon) in
+            DispatchQueue.main.async {
+            
+            
+            guard let pokemon = pokemon else {return}
+            // set the labels to the pokemon properties
+            
+            self.nameLabel.text = pokemon.name.capitalized
+            self.idLabel.text = "ID: \(pokemon.id)"
+            self.abilitiesLabel.text = "Abilities: \(pokemon.abilities.joined(separator: ", "))"
+            }
+            
+        }
+        
+        
     }
     
     
